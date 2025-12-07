@@ -86,7 +86,7 @@ jobs:
 
      - name: Package with Maven
 
-       run: mvn -B clean package
+       run: mvn -B clean packages
 
  
 
