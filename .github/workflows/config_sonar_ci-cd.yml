@@ -69,7 +69,6 @@ jobs:
 
       
   build:
-  
     runs-on: ubuntu-latest
     needs: sonar
     steps:
@@ -107,7 +106,7 @@ jobs:
        uses: actions/download-artifact@v4
        with:
          name: geo_app-jar
-         path: target/
+         path: .
 
      # Load secrets from Vault and set as env variables for rest of job
      - name: Read secrets from Vault
